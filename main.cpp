@@ -6,15 +6,18 @@ using namespace std;
 int main(){
  getTotal();
 
- bool finished = false;
- while(!finished){
     cout << "Welcome to Spelling Bee, a completely original game created by Sahana Kumar that has in no way been ripped off by the NYT." << endl;
     cout << "Here are your letters:" << endl;
     shuffle();
     display();
     cout << endl << endl;
     cout << "You can either ask for instructions (press 1), shuffle (press 2), enter a guess (press 3), or see what your current level is (press 4)" << endl;
-    cout << "Please input a number" << endl;
+
+
+    bool finished = false;
+ while(!finished){
+     cout << endl;
+    cout << "Please input a number: " << endl;
     cout << endl;
 
     int input;
